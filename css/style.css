@@ -99,12 +99,12 @@ button {
 
 @media screen and (max-width: 768px) {
   .form {
-    width: 85%;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 576) {
   .form {
-    width: 95%;
+    width: 100%;
   }
 }
