@@ -29,7 +29,7 @@
           <div class="tab">
             <ul>
               <li id="learnerBtn" class="active">
-                <a href="#"><i class="fas fa-child"></i> Learner</a>
+                <a href="#"><i class="fas fa-user-tie"></i> Parent</a>
               </li>
               <li id="teacherBtn">
                 <a href="#"
@@ -39,335 +39,359 @@
             </ul>
           </div>
 
-          <div id="learnerForm" class="row my-3">
-            <h2><i class="fas fa-child"></i> Learner Registration</h2>
-            <div class="col-12 mb-2">
-              <label for="learnerFirstName" class="form-label"
-                ><i class="fas fa-user"></i> Enter Learner's First Name*</label
-              >
-              <input
-                id="learnerFirstName"
-                type="text"
-                class="form-control"
-                name="learnerFirstName"
-                placeholder="Learner's First Name"
-                required
-              />
-            </div>
+          <form action="">
+            <div id="learnerForm" class="row my-3">
+              <h2><i class="fas fa-user-tie"></i> Parent Registration</h2>
 
-            <div class="col-12 mb-2">
-              <label for="learnerMiddleName" class="form-label"
-                ><i class="fas fa-user"></i> Enter Learner's Middle Name*</label
-              >
-              <input
-                id="learnerMiddleName"
-                type="text"
-                class="form-control"
-                name="learnerMiddleName"
-                placeholder="Learner's Middle Name"
-                required
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="learnerLastName" class="form-label"
-                ><i class="fas fa-user"></i> Enter Learner's Last Name*</label
-              >
-              <input
-                id="learnerLastName"
-                type="text"
-                class="form-control"
-                name="learnerLastName"
-                placeholder="Learner's Last Name"
-                required
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="dateOfBirth" class="form-label"
-                ><i class="fas fa-calendar"></i> Enter Date Of Birth*</label
-              >
-              <input
-                id="dateOfBirth"
-                type="date"
-                class="form-control"
-                name="dateOfBirth"
-                placeholder="Date Of Birth"
-                required
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="schoolName" class="form-label"
-                ><i class="fas fa-calendar"></i> Enter School Name*</label
-              >
-              <input
-                id="schoolName"
-                type="text"
-                class="form-control"
-                name="schoolName"
-                placeholder="School Name"
-                required
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="grade" class="form-label"
-                ><i class="fas fa-user-graduate"></i>Select Grade*</label
-              >
-
-              <select name="grade" id="grade" class="form-select" required>
-                <option selected disabled>Select Grade</option>
-                <option value="-1">Grade Pre-R</option>
-                <option value="0">Grade R</option>
-                <option value="1">Grade 01</option>
-                <option value="2">Grade 02</option>
-                <option value="3">Grade 03</option>
-                <option value="4">Grade 04</option>
-                <option value="5">Grade 05</option>
-                <option value="6">Grade 06</option>
-                <option value="7">Grade 07</option>
-                <option value="8">Grade 08</option>
-                <option value="9">Grade 09</option>
-                <option value="10">Grade 10</option>
-                <option value="11">Grade 11</option>
-                <option value="12">Grade 12</option>
-                <option value="13">Post Matric</option>
-                <option value="14">LSEN</option>
-                <option value="15">Multigrade</option>
-                <option value="101">SID Year 01</option>
-                <option value="102">SID Year 02</option>
-                <option value="103">SID Year 03</option>
-                <option value="104">SID Year 04</option>
-                <option value="105">SID Year 05</option>
-                <option value="106">SID Year 06</option>
-                <option value="107">SID Year 07</option>
-                <option value="108">SID Year 08</option>
-                <option value="109">SID Year 09</option>
-                <option value="110">SID Year 10</option>
-                <option value="111">SID Year 11</option>
-                <option value="112">SID Year 12</option>
-                <option value="113">SID Year 13</option>
-                <option value="114">SID Year 14</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="className" class="form-label"
-                ><i class="fas fa-calendar"></i> Enter Class*</label
-              >
-              <input
-                id="className"
-                type="text"
-                class="form-control"
-                name="className"
-                placeholder="Class"
-                required
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="learnerEmail" class="form-label"
-                ><i class="fas fa-envelope"></i> Enter Learner's Email</label
-              >
-              <input
-                id="learnerEmail"
-                type="email"
-                class="form-control"
-                name="learnerEmail"
-                placeholder="Learner's Email"
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="learnerPhone" class="form-label"
-                ><i class="fas fa-phone"></i> Enter Learner's Phone*</label
-              >
-              <input
-                id="learnerPhone"
-                type="text"
-                class="form-control"
-                name="learnerPhone"
-                placeholder="Learner's Phone"
-                required
-              />
-            </div>
-
-            <h3 class="my-3">Parent Details</h3>
-
-            <div class="col-12 mb-2">
-              <label for="parentFirstName" class="form-label"
-                ><i class="fas fa-user"></i> Enter Parent's First Name*</label
-              >
-              <input
-                id="parentFirstName"
-                type="text"
-                class="form-control"
-                name="parentFirstName"
-                placeholder="Parent's First Name"
-                required
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="parentLastName" class="form-label"
-                ><i class="fas fa-user"></i> Enter Parent's Last Name*</label
-              >
-              <input
-                id="parentLastName"
-                type="text"
-                class="form-control"
-                name="parentLastName"
-                placeholder="Parent's Last Name"
-                required
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="parentDateOfBirth" class="form-label"
-                ><i class="fas fa-calendar"></i> Enter Parent's Date Of
-                Birth*</label
-              >
-              <input
-                id="parentDateOfBirth"
-                type="date"
-                class="form-control"
-                name="parentDateOfBirth"
-                placeholder="Parent's Date Of Birth"
-                required
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="parentEmail" class="form-label"
-                ><i class="fas fa-envelope"></i> Enter Parent's Email</label
-              >
-              <input
-                id="parentEmail"
-                type="email"
-                class="form-control"
-                name="parentEmail"
-                placeholder="Parent's Email"
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="parentPhone" class="form-label"
-                ><i class="fas fa-phone"></i> Enter Parent's Phone*</label
-              >
-              <input
-                id="parentPhone"
-                type="text"
-                class="form-control"
-                name="parentPhone"
-                placeholder="Parent's Phone"
-                required
-              />
-            </div>
-
-            <div class="col-12 mb-2">
-              <label for="address" class="form-label"
-                ><i class="fas fa-location-dot"></i> Enter Address</label
-              >
-              <textarea class="form-control" id="address" rows="3"></textarea>
-            </div>
-
-            <div class="form-check mb-2 ms-3">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="learnerDeclaration"
-              />
-              <label class="form-check-label" for="learnerDeclaration">
-                I accept the
-                <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#declarations"
+              <h3 class="my-3">Learner Details</h3>
+              <div class="col-12 mb-2">
+                <label for="learnerFirstName" class="form-label"
+                  ><i class="fas fa-user"></i> Enter Learner's First
+                  Name*</label
                 >
-                  declarations
-                </a>
-              </label>
+                <input
+                  id="learnerFirstName"
+                  type="text"
+                  class="form-control"
+                  name="learnerFirstName"
+                  placeholder="Learner's First Name"
+                  required
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="learnerMiddleName" class="form-label"
+                  ><i class="fas fa-user"></i> Enter Learner's Middle
+                  Name</label
+                >
+                <input
+                  id="learnerMiddleName"
+                  type="text"
+                  class="form-control"
+                  name="learnerMiddleName"
+                  placeholder="Learner's Middle Name"
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="learnerLastName" class="form-label"
+                  ><i class="fas fa-user"></i> Enter Learner's Last Name*</label
+                >
+                <input
+                  id="learnerLastName"
+                  type="text"
+                  class="form-control"
+                  name="learnerLastName"
+                  placeholder="Learner's Last Name"
+                  required
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="dateOfBirth" class="form-label"
+                  ><i class="fas fa-calendar"></i> Enter Date Of Birth</label
+                >
+                <input
+                  id="dateOfBirth"
+                  type="date"
+                  class="form-control"
+                  name="dateOfBirth"
+                  placeholder="Date Of Birth"
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="schoolName" class="form-label"
+                  ><i class="fas fa-calendar"></i> Enter School Name*</label
+                >
+                <input
+                  id="schoolName"
+                  type="text"
+                  class="form-control"
+                  name="schoolName"
+                  placeholder="School Name"
+                  required
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="grade" class="form-label"
+                  ><i class="fas fa-user-graduate"></i>Select Grade*</label
+                >
+
+                <select name="grade" id="grade" class="form-select" required>
+                  <option selected disabled>Select Grade</option>
+                  <option value="-1">Grade Pre-R</option>
+                  <option value="0">Grade R</option>
+                  <option value="1">Grade 01</option>
+                  <option value="2">Grade 02</option>
+                  <option value="3">Grade 03</option>
+                  <option value="4">Grade 04</option>
+                  <option value="5">Grade 05</option>
+                  <option value="6">Grade 06</option>
+                  <option value="7">Grade 07</option>
+                  <option value="8">Grade 08</option>
+                  <option value="9">Grade 09</option>
+                  <option value="10">Grade 10</option>
+                  <option value="11">Grade 11</option>
+                  <option value="12">Grade 12</option>
+                  <option value="13">Post Matric</option>
+                  <option value="14">LSEN</option>
+                  <option value="15">Multigrade</option>
+                  <option value="101">SID Year 01</option>
+                  <option value="102">SID Year 02</option>
+                  <option value="103">SID Year 03</option>
+                  <option value="104">SID Year 04</option>
+                  <option value="105">SID Year 05</option>
+                  <option value="106">SID Year 06</option>
+                  <option value="107">SID Year 07</option>
+                  <option value="108">SID Year 08</option>
+                  <option value="109">SID Year 09</option>
+                  <option value="110">SID Year 10</option>
+                  <option value="111">SID Year 11</option>
+                  <option value="112">SID Year 12</option>
+                  <option value="113">SID Year 13</option>
+                  <option value="114">SID Year 14</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="className" class="form-label"
+                  ><i class="fas fa-school"></i> Enter Class*</label
+                >
+                <select
+                  name="className"
+                  id="className"
+                  class="form-select"
+                  required
+                >
+                  <option selected>Select Class</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="learnerEmail" class="form-label"
+                  ><i class="fas fa-envelope"></i> Enter Learner's Email</label
+                >
+                <input
+                  id="learnerEmail"
+                  type="email"
+                  class="form-control"
+                  name="learnerEmail"
+                  placeholder="Learner's Email"
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="learnerPhone" class="form-label"
+                  ><i class="fas fa-phone"></i> Enter Learner's Phone</label
+                >
+                <input
+                  id="learnerPhone"
+                  type="text"
+                  class="form-control"
+                  name="learnerPhone"
+                  placeholder="Learner's Phone"
+                />
+              </div>
+
+              <h3 class="my-3">Parent Details</h3>
+
+              <div class="col-12 mb-2">
+                <label for="parentFirstName" class="form-label"
+                  ><i class="fas fa-user"></i> Enter Parent's First Name*</label
+                >
+                <input
+                  id="parentFirstName"
+                  type="text"
+                  class="form-control"
+                  name="parentFirstName"
+                  placeholder="Parent's First Name"
+                  required
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="parentLastName" class="form-label"
+                  ><i class="fas fa-user"></i> Enter Parent's Last Name*</label
+                >
+                <input
+                  id="parentLastName"
+                  type="text"
+                  class="form-control"
+                  name="parentLastName"
+                  placeholder="Parent's Last Name"
+                  required
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="parentDateOfBirth" class="form-label"
+                  ><i class="fas fa-calendar"></i> Enter Parent's Date Of
+                  Birth</label
+                >
+                <input
+                  id="parentDateOfBirth"
+                  type="date"
+                  class="form-control"
+                  name="parentDateOfBirth"
+                  placeholder="Parent's Date Of Birth"
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="parentEmail" class="form-label"
+                  ><i class="fas fa-envelope"></i> Enter Parent's Email</label
+                >
+                <input
+                  id="parentEmail"
+                  type="email"
+                  class="form-control"
+                  name="parentEmail"
+                  placeholder="Parent's Email"
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="parentPhone" class="form-label"
+                  ><i class="fas fa-phone"></i> Enter Parent's Phone*</label
+                >
+                <input
+                  id="parentPhone"
+                  type="text"
+                  class="form-control"
+                  name="parentPhone"
+                  placeholder="Parent's Phone"
+                  required
+                />
+              </div>
+
+              <div class="col-12 mb-2">
+                <label for="address" class="form-label"
+                  ><i class="fas fa-location-dot"></i> Enter Address</label
+                >
+                <textarea class="form-control" id="address" rows="3"></textarea>
+              </div>
+
+              <div class="form-check mb-2 ms-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="learnerDeclaration"
+                />
+                <label class="form-check-label" for="learnerDeclaration">
+                  I accept the
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#declarations"
+                  >
+                    declarations
+                  </a>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-dark">
+                <i class="fas fa-user-plus"></i> Submit Form
+              </button>
             </div>
+          </form>
 
-            <button type="submit" class="btn btn-dark">
-              <i class="fas fa-user-plus"></i> Submit Form
-            </button>
-          </div>
+          <form action="">
+            <div id="teacherForm" class="row my-3 hidden">
+              <h2>
+                <i class="fas fa-chalkboard-teacher"></i> Teacher Registration
+              </h2>
+              <div class="col-12 mb-2">
+                <label for="teacherFirstName" class="form-label"
+                  ><i class="fas fa-user"></i> Enter Teacher's First
+                  Name*</label
+                >
+                <input
+                  id="teacherFirstName"
+                  type="text"
+                  class="form-control"
+                  name="teacherFirstName"
+                  placeholder="Teacher's First Name"
+                  required
+                />
+              </div>
 
-          <div id="teacherForm" class="row my-3 hidden">
-            <h2>
-              <i class="fas fa-chalkboard-teacher"></i> Teacher Registration
-            </h2>
-            <div class="col-12 mb-2">
-              <label for="teacherFirstName" class="form-label"
-                ><i class="fas fa-user"></i> Enter Teacher's First Name*</label
-              >
-              <input
-                id="teacherFirstName"
-                type="text"
-                class="form-control"
-                name="teacherFirstName"
-                placeholder="Teacher's First Name"
-                required
-              />
-            </div>
+              <div class="col-12 mb-2">
+                <label for="teacherMiddleName" class="form-label"
+                  ><i class="fas fa-user"></i> Enter Teacher's Middle
+                  Name</label
+                >
+                <input
+                  id="teacherMiddleName"
+                  type="text"
+                  class="form-control"
+                  name="teacherMiddleName"
+                  placeholder="Teacher's Middle Name"
+                />
+              </div>
 
-            <div class="col-12 mb-2">
-              <label for="teacherLastName" class="form-label"
-                ><i class="fas fa-user"></i> Enter Teacher's Last Name*</label
-              >
-              <input
-                id="teacherLastName"
-                type="text"
-                class="form-control"
-                name="teacherLastName"
-                placeholder="Teacher's Last Name"
-                required
-              />
-            </div>
+              <div class="col-12 mb-2">
+                <label for="teacherLastName" class="form-label"
+                  ><i class="fas fa-user"></i> Enter Teacher's Last Name*</label
+                >
+                <input
+                  id="teacherLastName"
+                  type="text"
+                  class="form-control"
+                  name="teacherLastName"
+                  placeholder="Teacher's Last Name"
+                  required
+                />
+              </div>
 
-            <div class="col-12 mb-2">
-              <label for="teacherEmail" class="form-label"
-                ><i class="fas fa-envelope"></i> Enter Teacher's Email*</label
-              >
-              <input
-                id="teacherEmail"
-                type="email"
-                class="form-control"
-                name="teacherEmail"
-                placeholder="Teacher's Email"
-                required
-              />
-            </div>
+              <div class="col-12 mb-2">
+                <label for="teacherEmail" class="form-label"
+                  ><i class="fas fa-envelope"></i> Enter Teacher's Email</label
+                >
+                <input
+                  id="teacherEmail"
+                  type="email"
+                  class="form-control"
+                  name="teacherEmail"
+                  placeholder="Teacher's Email"
+                />
+              </div>
 
-            <div class="col-12 mb-2">
-              <label for="teacherPhone" class="form-label"
-                ><i class="fas fa-phone"></i> Enter Teacher's Phone</label
-              >
-              <input
-                id="teacherPhone"
-                type="text"
-                class="form-control"
-                name="teacherPhone"
-                placeholder="Teacher's Phone"
-              />
-            </div>
+              <div class="col-12 mb-2">
+                <label for="teacherPhone" class="form-label"
+                  ><i class="fas fa-phone"></i> Enter Teacher's Phone*</label
+                >
+                <input
+                  id="teacherPhone"
+                  type="text"
+                  class="form-control"
+                  name="teacherPhone"
+                  placeholder="Teacher's Phone"
+                  required
+                />
+              </div>
 
-            <div class="col-12 mb-2">
-              <label for="teacherAddress" class="form-label"
-                ><i class="fas fa-location-dot"></i> Enter Teacher
-                Address</label
-              >
-              <textarea
-                class="form-control"
-                id="teacherAddress"
-                rows="3"
-              ></textarea>
-            </div>
+              <div class="col-12 mb-2">
+                <label for="teacherAddress" class="form-label"
+                  ><i class="fas fa-location-dot"></i> Enter Teacher
+                  Address</label
+                >
+                <textarea
+                  class="form-control"
+                  id="teacherAddress"
+                  rows="3"
+                ></textarea>
+              </div>
 
-            <!-- <div class="form-check mb-2 ms-3">
+              <!-- <div class="form-check mb-2 ms-3">
               <input
                 type="checkbox"
                 class="form-check-input"
@@ -385,10 +409,11 @@
               </label>
             </div> -->
 
-            <button type="submit" class="btn btn-dark">
-              <i class="fas fa-user-plus"></i> Submit Form
-            </button>
-          </div>
+              <button type="submit" class="btn btn-dark">
+                <i class="fas fa-user-plus"></i> Submit Form
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>

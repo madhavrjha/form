@@ -16,4 +16,4 @@ learnerBtn.addEventListener('click', function (e) {
   teacherBtn.classList.remove('active');
   learnerForm.classList.remove('hidden');
   teacherForm.classList.add('hidden');
-});
+})
